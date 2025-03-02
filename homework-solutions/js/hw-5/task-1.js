@@ -31,7 +31,8 @@ for(let i=1;i<=5;i++){
     for(let j=1;j<=i;j++){
     mult+=":)";
     }
-   i<=5 ? smilePatternResult  += mult + "\n": null;
+    smilePatternResult  += mult
+    i!=5 ? smilePatternResult  += "\n": null;
 }
 
 //console.log(smilePatternResult);
