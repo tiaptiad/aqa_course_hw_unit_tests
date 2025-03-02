@@ -18,4 +18,18 @@
  */
 let fizzBuzzResult = '';
 
+for(let num=1;num<=100;num++){
+    if (Number.isInteger(num/3 )&& Number.isInteger(num/5)){
+        fizzBuzzResult+= num + " - делится и на 3 и на 5";
+    } else if(Number.isInteger(num/3)){
+        fizzBuzzResult+= num + " - делится на 3";
+    } else if(Number.isInteger(num/5)){
+        fizzBuzzResult+= num + " - делится на 5";
+        } else {
+            fizzBuzzResult+= num;
+        }
+    num<100 ? fizzBuzzResult+= "\n" : null;
+} 
+
+//console.log(fizzBuzzResult);
 export { fizzBuzzResult };
